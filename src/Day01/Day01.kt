@@ -29,7 +29,7 @@ fun main() {
 
     fun part2(input: List<String>): Int {
         var calories = 0
-        var total: Int
+        val total: Int
         val num = mutableListOf<Int>()
 
         for (item in input)
