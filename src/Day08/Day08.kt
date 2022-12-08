@@ -12,7 +12,7 @@ fun main() {
         for i in forest.indices
         {
             var largest = forest[i][0]
-            for j in row.indices
+            for j in forest[i].indices
             {
                 if(largest > forest[i][j])
                 {
@@ -24,7 +24,7 @@ fun main() {
         for i in forest.indices
         {
             var largest = forest[0][i]
-            for j in row.indices
+            for j in forest[i].indices
             {
                 if(largest > forest[j][i])
                 {
