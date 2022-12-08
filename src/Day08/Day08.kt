@@ -33,6 +33,31 @@ fun main() {
                 }
             }
         }
+        for i in forest.indices.reversed()
+        {
+            var largest = forest[i][0]
+            for j in forest[i].indices
+            {
+                if(largest > forest[i][j])
+                {
+                    counter++
+                    largest = tree
+                }
+            }
+        }
+        for i in forest.indices.reversed()
+        {
+            var largest = forest[0][i]
+            for j in forest[i].indices.reversed()
+            {
+                if(largest > forest[j][i])
+                {
+                    counter++
+                    largest = tree
+                }
+            }
+        }
+
         return counter
     }
 
